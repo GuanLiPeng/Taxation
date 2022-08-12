@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--system color-->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--自定义颜色-->
+    <color name="myBackground">#F6F6F6</color>
+
+    <color name="myWhite">#FFFFFFFF</color>
+    <color name="myBlack">#3C3C3C</color>
+    <color name="myGray">#D8D5D5</color>
+    <color name="myGrayDark">#C8C8C8</color>
+    <color name="myBlue">#7FB5FF</color>
+    <color name="myBlueDark">#2B84FF</color>
+    <color name="myGreen">#A8E066</color>
+    <color name="myPink">#FF4081</color>
+    <color name="myOrange">#FFAE37</color>
+
+    <color name="myTextGray">#969696</color>
+    <color name="myTextGreen">#41ab5d</color>
+    <color name="myTextBlue">#4292c6</color>
+    <color name="myTextOrange">#ef3b2c</color>
+    <color name="myTextYellow">#fe9929</color>
+
+</resources>

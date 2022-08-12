@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.my.InquireActivity">
+
+
+    <!--顶部导航栏背景-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_toolbar"
+        app:layout_constraintBottom_toBottomOf="@+id/a_m_i_action_bar_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--返回图标-->
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/a_m_i_return_button"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/ic_break"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/a_m_i_action_bar_title" />
+    <!--标题-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/a_m_i_action_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/myWhite"
+        android:textSize="@dimen/title_size_22"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="招标查询" />
+
+    <!--card样式列表-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/a_m_i_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+    <!--无内容 的图片提醒-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/a_m_i_no_info_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_no_content"
+        app:layout_constraintBottom_toTopOf="@+id/a_m_i_no_info_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--没有内容 的文字提醒-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/a_m_i_no_info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这里好像没有内容呢"
+        android:textColor="@color/myTextGray"
+        android:textSize="@dimen/text_size_18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

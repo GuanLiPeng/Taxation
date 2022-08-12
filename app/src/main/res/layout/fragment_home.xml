@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--顶部导航栏背景-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_toolbar"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--搜索框-->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/home_search_view"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_search"
+        android:maxHeight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryBackground="@null"
+        app:showDividers="none"
+        app:submitBackground="@null" />
+
+
+    <!--工程建设 按钮-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/home_construction_button"
+        android:layout_width="@dimen/home_top_icon_size"
+        android:layout_height="@dimen/home_top_icon_size"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_construction"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_search_view" />
+    <!--工程建设 按钮文字-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="工程建设"
+        android:textColor="@color/myBackground"
+        android:textSize="@dimen/text_size_12"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/home_construction_button"
+        app:layout_constraintStart_toStartOf="@+id/home_construction_button"
+        app:layout_constraintTop_toBottomOf="@+id/home_construction_button" />
+
+    <!--医疗卫生 按钮-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/home_medical_hygiene_button"
+        android:layout_width="@dimen/home_top_icon_size"
+        android:layout_height="@dimen/home_top_icon_size"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_medical_hygiene"
+        app:layout_constraintEnd_toStartOf="@+id/home_environmental_protection_button"
+        app:layout_constraintStart_toEndOf="@+id/home_construction_button"
+        app:layout_constraintTop_toBottomOf="@+id/home_search_view" />
+    <!--医疗卫生 按钮文字-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="医疗卫生"
+        android:textColor="@color/myBackground"
+        android:textSize="@dimen/text_size_12"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/home_medical_hygiene_button"
+        app:layout_constraintStart_toStartOf="@+id/home_medical_hygiene_button"
+        app:layout_constraintTop_toBottomOf="@+id/home_medical_hygiene_button" />
+
+    <!--环保绿化 按钮-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/home_environmental_protection_button"
+        android:layout_width="@dimen/home_top_icon_size"
+        android:layout_height="@dimen/home_top_icon_size"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_environmental_protection"
+        app:layout_constraintEnd_toStartOf="@+id/home_more_button"
+        app:layout_constraintStart_toEndOf="@+id/home_construction_button"
+        app:layout_constraintTop_toBottomOf="@+id/home_search_view" />
+    <!--环保绿化 按钮文字-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingBottom="8dp"
+        android:text="环保绿化"
+        android:textColor="@color/myBackground"
+        android:textSize="@dimen/text_size_12"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/home_environmental_protection_button"
+        app:layout_constraintStart_toStartOf="@+id/home_environmental_protection_button"
+        app:layout_constraintTop_toBottomOf="@+id/home_environmental_protection_button" />
+
+    <!--信息建设 按钮-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/home_information_construction_button"
+        android:layout_width="@dimen/home_top_icon_size"
+        android:layout_height="@dimen/home_top_icon_size"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_information_construction"
+        app:layout_constraintEnd_toStartOf="@+id/home_more_button"
+        app:layout_constraintStart_toEndOf="@+id/home_environmental_protection_button"
+        app:layout_constraintTop_toBottomOf="@+id/home_search_view" />
+    <!--信息建设 按钮文字-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="信息建设"
+        android:textColor="@color/myBackground"
+        android:textSize="@dimen/text_size_12"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/home_information_construction_button"
+        app:layout_constraintStart_toStartOf="@+id/home_information_construction_button"
+        app:layout_constraintTop_toBottomOf="@+id/home_information_construction_button" />
+
+    <!--更多分类 按钮-->
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/home_more_button"
+        android:layout_width="@dimen/home_top_icon_size"
+        android:layout_height="@dimen/home_top_icon_size"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_more"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_search_view" />
+    <!--更多分类 按钮文字-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="更多分类"
+        android:textColor="@color/myBackground"
+        android:textSize="@dimen/text_size_12"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/home_more_button"
+        app:layout_constraintStart_toStartOf="@+id/home_more_button"
+        app:layout_constraintTop_toBottomOf="@+id/home_more_button" />
+
+
+    <!--资讯-->
+    <TextView
+        android:id="@+id/home_classification_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="咨 讯"
+        android:textColor="@color/myBlueDark"
+        android:textSize="@dimen/text_size_18"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/home_environmental_protection_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+    <!--资讯底部的指示标-->
+    <View
+        android:id="@+id/home_classification_news_dot_view"
+        android:layout_width="24dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bg_home_mini_dot"
+        app:layout_constraintEnd_toEndOf="@+id/home_classification_news"
+        app:layout_constraintStart_toStartOf="@+id/home_classification_news"
+        app:layout_constraintTop_toBottomOf="@+id/home_classification_news" />
+
+    <!--推荐-->
+    <TextView
+        android:id="@+id/home_classification_bid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="推 荐"
+        android:textColor="@color/myTextGray"
+        android:textSize="@dimen/text_size_18"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/home_environmental_protection_button"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+    <!--推荐底部的指示标-->
+    <View
+        android:id="@+id/home_classification_bid_dot_view"
+        android:layout_width="24dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bg_home_mini_dot"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/home_classification_bid"
+        app:layout_constraintStart_toStartOf="@+id/home_classification_bid"
+        app:layout_constraintTop_toBottomOf="@+id/home_classification_bid" />
+
+
+    <!--card样式新闻列表-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_recycler_view_news"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_classification_news_dot_view"
+        tools:listitem="@layout/list_item_news" />
+    <!--card样式列表-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_recycler_view_bid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_classification_bid_dot_view"
+        tools:listitem="@layout/list_item_bid" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

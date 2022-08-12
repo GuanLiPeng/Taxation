@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.BidDetailsActivity">
+
+    <!--顶部导航栏背景-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_toolbar"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--返回图标-->
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/a_h_b_l_d_return_button"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/ic_break"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+    <!--标题-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingBottom="8dp"
+        android:text="项目详情"
+        android:textColor="@color/myWhite"
+        android:textSize="@dimen/title_size_22"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--中间的滚动视图-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/a_h_b_l_d_apply_bid_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/a_h_b_l_d_content"
+            app:layout_constraintTop_toTopOf="@+id/a_h_b_l_d_content">
+            <!--文章标题-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/a_h_b_l_d_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/myBlack"
+                android:textSize="@dimen/text_size_18"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="招标标题...招标标题...招标标题..." />
+            <!--项目来源-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/a_h_b_l_d_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:textSize="@dimen/text_size_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/a_h_b_l_d_title"
+                tools:text="地址" />
+            <!--项目日期-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/a_h_b_l_d_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:textSize="@dimen/text_size_16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/a_h_b_l_d_title"
+                tools:text="发布日期" />
+            <!--项目正文-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/a_h_b_l_d_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/myBlack"
+                android:textSize="@dimen/text_size_18"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/a_h_b_l_d_address"
+                tools:text="招标内容...招标内容...招标内容...招标内容...招标内容...招标内容...招标内容...招标内容...招标内容..." />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+    <!--我的招标按钮-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/a_h_b_l_d_my_bid_button"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_my_bid_list_button_blue"
+        android:gravity="center"
+        android:text="我的招标"
+        android:textColor="@color/myWhite"
+        android:textSize="@dimen/title_size_20"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--申请招标按钮-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/a_h_b_l_d_apply_bid_button"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_apply_bid_button_blue_gradient"
+        android:gravity="center"
+        android:text="申请此项目"
+        android:textColor="@color/myWhite"
+        android:textSize="@dimen/title_size_20"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/a_h_b_l_d_my_bid_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

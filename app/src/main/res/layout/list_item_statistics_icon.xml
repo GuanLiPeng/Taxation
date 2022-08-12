@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp">
+
+    <!--按钮-->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/l_i_s_i_image_button"
+        android:layout_width="@dimen/more_button_icon_size"
+        android:layout_height="@dimen/more_button_icon_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/button_other_all" />
+    <!--按钮文字-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/l_i_s_i_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="@dimen/text_size_14"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/l_i_s_i_image_button"
+        app:layout_constraintStart_toStartOf="@+id/l_i_s_i_image_button"
+        app:layout_constraintTop_toBottomOf="@+id/l_i_s_i_image_button"
+        tools:text="图标" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

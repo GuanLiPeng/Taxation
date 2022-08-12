@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--默认尺寸-->
+    <dimen name="default_screen_margins">16dp</dimen>
+    <dimen name="default_screen_space">8dp</dimen>
+    <dimen name="toolbar_height">54dp</dimen>
+    <dimen name="bottom_navigation_height">60dp</dimen>
+    <dimen name="zero">0dp</dimen>
+
+    <!--圆角大小和阴影-->
+    <dimen name="radius_4">4dp</dimen>
+    <dimen name="radius_8">8dp</dimen>
+
+    <!--文本尺寸-->
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="title_size_20">20sp</dimen>
+    <dimen name="title_size_22">22sp</dimen>
+
+    <!--图标尺寸-->
+    <dimen name="home_top_icon_size">44dp</dimen>
+    <dimen name="more_button_icon_size">56dp</dimen>
+
+    <!--登录和注册界面-->
+    <dimen name="vertical_margin">30dp</dimen>
+    <dimen name="control_spacing">15dp</dimen>
+    <dimen name="button_control_spacing">50dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+</resources>

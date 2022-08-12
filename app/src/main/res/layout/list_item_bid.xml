@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/l_i_b_all_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="12dp">
+
+    <!--招标分类-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/l_i_b_classification"
+        android:layout_width="40dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/bg_card_info_green"
+        android:gravity="center"
+        android:padding="4dp"
+        android:textColor="@color/myTextGreen"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="招标分类" />
+
+    <!--招标标题-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/l_i_b_head"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/myBlack"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/l_i_b_classification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/l_i_b_classification"
+        app:layout_constraintTop_toTopOf="@+id/l_i_b_classification"
+        tools:text="这是一段招标信息..." />
+
+    <!--招标详细内容-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/l_i_b_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l_i_b_classification"
+        tools:text="这是一段招标介绍..." />
+
+    <!--位置信息-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/l_i_b_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_card_info_blue"
+        android:padding="4dp"
+        android:textColor="@color/myTextBlue"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l_i_b_content"
+        tools:text="江苏 南京" />
+
+    <!--价格-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/l_i_b_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_card_info_red"
+        android:padding="4dp"
+        android:textColor="@color/myTextOrange"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintStart_toEndOf="@+id/l_i_b_address"
+        app:layout_constraintTop_toBottomOf="@+id/l_i_b_content"
+        tools:text="123.00万" />
+
+    <!--发布时间-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/l_i_b_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:padding="4dp"
+        android:textColor="@color/myGrayDark"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintBottom_toBottomOf="@+id/l_i_b_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/l_i_b_price"
+        tools:text="2021年04月11日" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/myBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l_i_b_address" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
